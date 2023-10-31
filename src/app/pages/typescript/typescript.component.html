@@ -8,9 +8,7 @@
       <!-- Column -->
       <div class="col-lg-9 col-md-10 align-self-center text-center no-trans">
         <h1 class="title">TypeScript</h1>
-        <h5 class="subtitle op-5">
-            El orden en el mundo del caos.
-        </h5>
+        <h5 class="subtitle op-5">El orden en el mundo del caos.</h5>
       </div>
       <!-- Column -->
     </div>
@@ -21,22 +19,19 @@
 <div class="container spacer max-800">
   <div class="row justify-content-center">
     <!-- Column -->
-    <div class="col-md-12 no-trans text-center">
+    <div class="col-md-12 no-trans text-center padding-text">
       <h2 class="title">Secciones</h2>
       <h6 class="subtitle">
-        Esta categoria contiene varias secciones y estas 
-        a su vez
-        contienen varios posts, que tratan un tema 
-        relacionado con dicha sección.
+        Esta categoria contiene varias secciones y estas a su vez contienen
+        varios posts, que tratan un tema relacionado con dicha sección.
       </h6>
-
     </div>
     <!-- Column -->
   </div>
   <div class="row m-t-40 justify-content-center">
     <!-- Column -->
     <div
-      class="col-md-12 no-trans border-bottom mb-4"
+      class="col-md-12 no-trans border-bottom mb-4 padding-text"
       *ngFor="let bl of service.Blogs"
     >
       <div class="card" data-aos="flip-left" data-aos-duration="1200">
@@ -54,7 +49,8 @@
             </p>
           </div>
           <div class="col-md-3 no-trans">
-            <a *ngIf="bl.isActive"
+            <a
+              *ngIf="bl.isActive"
               class="linking font-medium text-themecolor m-t-10 cursor-pointer"
             >
               <span (click)="viewDetail(bl.id)">Ver</span>

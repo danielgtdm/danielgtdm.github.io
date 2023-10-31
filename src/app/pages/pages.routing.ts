@@ -13,6 +13,13 @@ const routes: Routes = [
           import('./home/home.module').then((m) => m.HomeModule),
       },
       {
+        path: 'typescript',
+        loadChildren: () =>
+          import('./typescript/typescript.module').then(
+            (m) => m.TypescriptModule
+          ),
+      },
+      {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full',

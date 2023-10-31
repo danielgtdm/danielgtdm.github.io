@@ -6,7 +6,7 @@ export const blogs: Blog[] = [
     category: 'Lenguaje',
     heading: 'Typescript',
     subHeading: 'El orden en el mundo del caos',
-    blogPosts: '1 Post',
+    blogPosts: '1 Sección',
     isActive: true,
   },
   {

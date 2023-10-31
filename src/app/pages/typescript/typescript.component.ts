@@ -5,11 +5,11 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'app-typescript',
+  templateUrl: './typescript.component.html',
+  styleUrls: ['./typescript.component.scss'],
 })
-export class HomeComponent {
+export class TypescriptComponent {
   blogsDetail: Blog[] = [];
 
   constructor(
@@ -38,7 +38,7 @@ export class HomeComponent {
 
     switch (id) {
       case 0:
-        route = '/public/pages/typescript';
+        route = '/public/pages/typescript/introduccion';
         break;
 
       default:
